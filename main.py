@@ -8,6 +8,7 @@ to either the OOP Habit class or the Functional Analytics module.
 
 import click
 import sys
+import db
 
 # Import our Object-Oriented module for managing individual habit data
 from habit import Habit

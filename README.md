@@ -15,6 +15,20 @@ The project demonstrates the use of **Object-Oriented Programming (OOP)** for ha
 - **Data Persistence:** Uses **SQLite3** to store data reliably between sessions.
 - **Interactive CLI:** Color-coded output, formatted tables, and safety prompts (e.g., overwrite confirmation).
 - **Automated Data Seeding:** Automatically populates the database with 5 predefined habits and **4 weeks of time-series test data** upon first launch for immediate testing.
+---
+## Screenshots
+![CLI Commands in Action](cli_screenshot.png)
+*Example of the CLI interface and analytics output.*
+
+![CLI Commands in Action](cli_screenshot1.png)
+*Example of the CLI interface and list output.*
+
+![CLI Commands in Action](cli_screenshot2.png)
+*Example of the CLI interface and analyze habit gym  output.*
+
+![pytest Passing](pytest_screenshot.png)
+*100% passing test suite using pytest.*
+---
 
 ## Installation & Setup
 

@@ -24,7 +24,7 @@ from analytics import (
 
 # --- CLI BASE GROUP ---
 
-@click.group()
+
 @click.group()
 def cli():
     """Habit Tracker CLI - Manage and analyze your habits to build better routines."""

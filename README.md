@@ -20,21 +20,20 @@ The project demonstrates the use of **Object-Oriented Programming (OOP)** for ha
 
 ## Screenshots
 
-![CLI Commands in Action](cli_screenshot.png)
-
 _Example of the CLI interface and analytics output._
 
-![CLI Commands in Action](cli_screenshot1.png)
+![CLI Commands in Action](cli_screenshot.png)
 
 _Example of the CLI interface and list output._
 
-![CLI Commands in Action](cli_screenshot2.png)
+![CLI Commands in Action](cli_screenshot1.png)
 
 _Example of the CLI interface and analyze habit gym output._
 
-![pytest Passing](pytest_screenshot.png)
+![CLI Commands in Action](cli_screenshot2.png)
 
-## _100% passing test suite using pytest._
+_100% passing test suite using pytest._
+![pytest Passing](pytest_screenshot.png)
 
 ## Installation & Setup
 

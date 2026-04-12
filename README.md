@@ -16,21 +16,65 @@ The project demonstrates the use of **Object-Oriented Programming (OOP)** for ha
 - **Interactive CLI:** Color-coded output, formatted tables, and safety prompts (e.g., overwrite confirmation).
 - **Automated Data Seeding:** Automatically populates the database with 5 predefined habits and **4 weeks of time-series test data** upon first launch for immediate testing.
 
-## Installation
+## Installation & Setup
 
 ### Prerequisites
 
 - Python **3.10 or higher**
+- Git
 
-### Setup
+### 1. Clone the Repository
 
-Clone the repository, set up your virtual environment, and install dependencies:
+Download the code to your local machine:
+
+```bash
+git clone [https://github.com/YOUR_USERNAME/oofpp-habit-tracker.git](https://github.com/YOUR_USERNAME/oofpp-habit-tracker.git)
+cd oofpp-habit-tracker
+```
+
+### 2.Set Up a Virtual Environment
+
+It is highly recommended to run this project inside a virtual environment to keep dependencies isolated.
+
+# Create the virtual environment
+
+```bash
+python -m venv .venv
+```
+
+# Activate the virtual environment (Windows)
+
+```bash
+.\.venv\Scripts\activate
+```
+
+# Activate the virtual environment (Mac/Linux)
+
+```bash
+source .venv/bin/activate
+```
+
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
+### How the Automatic Seeding Works
+
+- To provide a "zero-friction startup" for evaluators and new users, this application features an automated database initialization sequence.
+
+- The very first time you execute any CLI command (e.g., python main.py --help), the main.py controller automatically checks the SQLite database.
+
+- Schema Creation: If the tables do not exist, it executes CREATE TABLE IF NOT EXISTS.
+
+- Data Injection: If the habit table is completely empty, it safely triggers the seed_data() module.
+
+- The Test Data: It injects 5 predefined habits (3 Daily, 2 Weekly) and backdates 4 weeks (28 days) of simulated check-off data.
+
+- Safety Check: On all subsequent runs, the app detects that data exists and instantly skips the seeding process, guaranteeing that user data is never overwritten.
+
+- This allows you to test the Analytics engine immediately without having to spend weeks manually logging habits!
 
 - **Create a New Habit**
   _Add a new habit to the tracker._

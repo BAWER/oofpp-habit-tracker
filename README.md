@@ -60,15 +60,19 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+---
+
 ### How the Automatic Seeding Works
 
 - To provide a "zero-friction startup" for evaluators and new users, this application features an automated database initialization sequence.
-- The very first time you execute any CLI command (e.g., python main.py --help), the main.py controller automatically checks the SQLite database.
+- The very first time you execute any CLI command (e.g., **_python main.py --help_**), the main.py controller automatically checks the SQLite database.
 - Schema Creation: If the tables do not exist, it executes CREATE TABLE IF NOT EXISTS.
 - Data Injection: If the habit table is completely empty, it safely triggers the seed_data() module.
 - The Test Data: It injects 5 predefined habits (3 Daily, 2 Weekly) and backdates 4 weeks (28 days) of simulated check-off data.
 - Safety Check: On all subsequent runs, the app detects that data exists and instantly skips the seeding process, guaranteeing that user data is never overwritten.
 - This allows you to test the Analytics engine immediately without having to spend weeks manually logging habits!
+
+---
 
 ## Usage Guide
 

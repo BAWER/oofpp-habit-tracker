@@ -1,0 +1,21 @@
+# --- Python Basics ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environment ---
+.venv/
+venv/
+env/
+
+# --- Testing ---
+.pytest_cache/
+
+# --- Database ---
+*.db
+*.sqlite3
+
+# --- OS / Editor junk (Optional but recommended) ---
+.DS_Store
+.vscode/
+.idea/

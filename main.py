@@ -25,10 +25,13 @@ from analytics import (
 # --- CLI BASE GROUP ---
 
 @click.group()
+@click.group()
 def cli():
     """Habit Tracker CLI - Manage and analyze your habits to build better routines."""
-    # This empty function acts as the main group for all other commands.
-    # It allows us to run `python main.py <command>`.
+    # --- ZERO FRICTION STARTUP ---
+    # Automatically create tables and seed the 4-week data on the very first launch!
+    db.create_tables()
+    db.seed_data()
     pass
 
 # --- CLI COMMANDS ---

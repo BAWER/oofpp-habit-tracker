@@ -47,7 +47,7 @@ _100% passing test suite using pytest._
 Download the code to your local machine:
 
 ```bash
-git clone [https://github.com/YOUR_USERNAME/oofpp-habit-tracker.git](https://github.com/YOUR_USERNAME/oofpp-habit-tracker.git)
+git clone [https://github.com/BAWER/oofpp-habit-tracker.git](https://github.com/BAWER/oofpp-habit-tracker.git)
 cd oofpp-habit-tracker
 ```
 
